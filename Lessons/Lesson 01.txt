@@ -1,0 +1,44 @@
+######## ######## ##############################################################
+######## ######## ##############################################################
+######## ######## Learning Addon Coding 101
+######## Lesson 01
+#### References
+
+First thing to is some good place to 
+catch references from while learning.
+
+Easiest way is to look at other addon(s) 
+that already exist and work on the 
+platform you want to make stuff for.
+
+## Google - http://www.google.com/
+You can always do a google search for 
+the 2 words, python syntax, and whatever 
+you want the to look up.  You can often 
+times find some good how-to information 
+and examples.  Here's 2 sites that often 
+come up on searches:
+
+## Python Docs - https://docs.python.org/2/library/
+## Stack Overflow - http://stackoverflow.com/
+
+You can find a lot of Addon projects on 
+common hosts, which make for decent 
+reference when doing a simular project.  
+Google Code seems to be closing and will 
+likely be gone by some point in August, 
+2015.  Some may use dropbox, bitbucket 
+or other such hosts.  One main host 
+that's good to look at is Github.  You 
+can also find a lot of projects at 
+xbmc.org / kodi.tv own repository(s) 
+which tends to have a system that's 
+basically like an FTP Hosting, with 
+several mirror servers.  You can also 
+check out SuperRepo.
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+######## ######## ##############################################################
+######## ######## ##############################################################
+######## ######## Learning Addon Coding 101
+######## Lesson 04
+#### addon.xml
+
+## An example of a addon.xml.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.exampleaddonb" name="Video Addon Example"
+    version="1.0.0" provider-name="The[COLOR tan]Highway[/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.t0mm0.common" />
+    <import addon="script.module.addon.common" optional="true" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>A smaller description of the addon.</summary>
+    <description>A longer description of the addon.</description>
+    <disclaimer>Sometimes it helps to have some kind of legal disclaimer included.</disclaimer>
+    <language>all</language>
+    <platform>all</platform>
+    <forum>http://www.example.com/</forum>
+    <website>http://www.example.com/</website>
+    <source></source>
+    <email>admin@example.com</email>
+  </extension>
+</addon>
+
+## <addon id="" >
+* Gone over in Lesson 02
+An id tag that can be used to call this 
+addon, that is used to identify this 
+addon and no other addon generally.
+
+## <addon name="" >
+* Gone over in Lesson 02
+The text label that will show for this 
+addon when you find it on the addon's 
+list for "Video Addon" in this case.
+
+## <addon provider-name="" >
+This tends to hold the names of the 
+developer(s) who worked on the project 
+and/or a group name or site name that 
+the project is made for.
+
+## <addon version="" >
+
+The current version number of this 
+addon's project.  Used to tell a part 
+different updates of a project.
+
+## <requires>
+
+Any modules that are to be imported, 
+now have to be listed in this section.  
+This section is used in part to see what 
+other addon projects need to be installed 
+when installing this addon.  If the addon 
+is said to be incompatible, it may be 
+having a problem locating a project 
+listed in this section or something in 
+this section doesn't match the requirements 
+of version of xbmc/kodi that the user has 
+installed.
+
+For example, at one point xbmc, at that 
+time, set a forced requirement for all 
+addons to make people to update their 
+installed version of xbmc by using:
+
+<import addon="xbmc.python" version="2.1.0"/>
+
+That also shows an example of using the 
+"version" tag, to say that it needs 
+atleast a minimum of that version number 
+or higher.
+
+This can be used to require an addon to be 
+installed when installing this project:
+
+<import addon="script.module.t0mm0.common" />
+
+While this method can be used to set the 
+optional use of an addon:
+
+<import addon="script.module.addon.common" optional="true" />
+
+## <extension point="xbmc.addon.metadata">
+
+This area allows you to provide users with useful information.
+
+#### <extension library="">
+
+Generally "default.py", this is the 
+file name in the addon's root folder 
+which is ran by default when the addon 
+is called to be started initially.
+
+This can also be a folder name such as 
+"lib", when doing a project such as an 
+module(s) to be imported later by other 
+addons.
+
+#### <extension point="">
+
+## xbmc.ui.screensaver
+
+Used when making a screensaver.
+
+## xbmc.python.module
+
+Used when making an package with 
+module(s) that can then be imported 
+by other addons.
+
+## xbmc.python.pluginsource
+
+Uses the built-in folder-view styled by 
+the currently used skin in xbmc/kodi.
+
+## xbmc.python.script
+
+Simular to a script or program being 
+launched, this method instead of using 
+the built-in folder-view default method, 
+instead allows you to customize things, 
+use your own skinned window and control 
+what happens when the user clicks or 
+takes some other action... rather than 
+reloading an addon, passing information, 
+over and over each click... this method 
+allows you to keep variables and such 
+active until the addon is closed.
+
+
+
+#### <provides></provides>
+
+This is where you choose what category list of addons the addon will show up under.
+
+## (blank) - Not visible.
+## "image" - Pictures
+## "audio" - Music
+## "video" - Videos
+## "executable" - Programs
+
+
+
+
+
+
+
+

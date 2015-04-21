@@ -1,0 +1,55 @@
+######## ######## ##############################################################
+######## ######## ##############################################################
+######## ######## Learning Addon Coding 101
+######## Lesson 02
+#### Naming
+
+It's best to stay on good terms with 
+other developers in general.  So, it's 
+best to be friendly when naming 
+projects.  There's 2 names you need 
+to think about when creating an addon.  
+
+The first is the Addon's Name / Title.  
+This is the label text you see when 
+browsing a list of addon's.  This 
+doesn't hurt as much to be the same as 
+on another addon.  Accidents can 
+happen after all.  Some People even 
+like to include colored text in this 
+by using 
+[COLOR red]Addon's Name[/COLOR].  The 
+Addon's name is placed in the addon's 
+folder in the file, addon.xml, inside 
+of 
+<addon ... name="Addon's Name" ... >.  
+
+The second name is the Addon's ID.  
+This is generally both used as the 
+name of the addon's FOLDER and also 
+put in the file, addon.xml, inside of 
+<addon ... id="Addon's ID" ... >.  An 
+Addon's ID usually looks like 
+"plugin.video.example" or 
+"skin.example" or 
+"script.module.example".
+It is important that a developer tries 
+to keep an Addon's ID generic, in 
+other words, make sure that no one 
+else is currently using it.  Even if 
+your forking an existing project, it 
+be nice to tweak the Addon's ID 
+slightly, so to not cause conflicts 
+with other addons or their developer(s).  
+Even if you just add a .tag like 
+"plugin.video.tag.example" with the 
+"tag" being a personalized tag that you 
+can use for your own stuff down the line.
+
+
+
+
+
+
+
+

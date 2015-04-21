@@ -1,0 +1,53 @@
+######## ######## ##############################################################
+######## ######## ##############################################################
+######## ######## Learning Addon Coding 101
+######## Lesson 03
+#### Left-Sided White Space
+
+This is the space that's to the left 
+side of any code on each line.  The 
+left side indentation on each line.  
+Python-based addons for use with 
+xbmc / kodi do not tend to use a lot 
+of brackets such as "{" and "}".  
+Instead, they use left side 
+identations.  This is made up of 
+spaces (" " 's) and tabs ("\t" 's).  
+Initially there tends to be no left 
+sided spacing.  When needing to ident 
+each time, often either 2 or 4 spaces 
+are used or a tab or two.  Adding 
+that much more spacing each time.  
+Instead of using a "}" bracket, you 
+unident or loose that same number of 
+left sided spacing. So for those that 
+are used to using something like:  
+
+if (a==b) { print "Hello world." }
+print "Bye now."
+
+For python coding you would instead 
+use:  
+
+if a==b:
+    print "Hello world."
+print "Bye now."
+
+or:  
+
+if (a==2) or (b==2):
+    print "Hello world."
+print "Bye now."
+
+or:  
+
+if (a > 0) and (b < 3):
+    print "Hello world."
+print "Bye now."
+
+
+
+
+
+
+
